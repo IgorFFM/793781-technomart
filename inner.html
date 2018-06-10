@@ -46,7 +46,56 @@
 		<h1 class="visually-hidden">Перфораторы</h1>
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтр товаров</h2>
-			<!-- Здесь будет форма -->
+			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+				<fieldset>
+					<legend>Цена:</legend>
+					<input type="range" name="preis-wahlen" id="filter-preis" min="0" max="30000" step="1">
+				</fieldset>
+				<fieldset>
+					<legend>Производители:</legend>
+					<ul>
+						<li>
+							<input type="checkbox" name="bosch" id="filter-bosch" checked>  
+							<label for="filter-bosch">Bosch</label>
+
+						</li>
+
+						<li>
+							<input type="checkbox" name="interskrol" id="filter-interskrol">
+							<label for="filter-interskrol">Интерскол</lable>
+
+						</li>
+						<li>
+							<input type="checkbox" name="makita" id="filter-makita" checked>
+							<label for="filter-makita">Makita</lable>
+
+						</li>
+						<li>
+							<input type="checkbox" name="dewalt" id="filter-dewalt">
+							<label for="filter-dewalt">Dewalt</lable>
+						</li>
+						<li>
+							<input type="checkbox" name="hitachi" id="filter-hitachi">
+							<label for="filter-hitachi">Hitachi</lable>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Питание:</legend>
+					<ul>
+						<li>
+							<input type="radio" name="product-type" id="filter-akku" checked>
+							<label for="filter-akku">Аккумуляторные</label>
+						</li>
+
+						<li>
+							<input type="radio" name="product-type" id="filter-netz">
+							<label for="filter-netz">Сетевые</label>
+						</li>
+					</ul>
+				</fieldset>	
+				<button class="button" type="submit">Показать</button>
+			</form>
 		</section>
 		<section class="catalog">
         	<h2 class="visually-hidden">Каталог перфораторов</h2>
