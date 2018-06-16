@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: regular;
+  color: #000000;
+
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header-logo {
+  background-color: #ee3643; 
+}
+
+.top-navigation {
+  background-color: #f3f7f9;
+} 
+
+.top-menu {
+  background-color: #293449;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: regular;
+  color: #ffffff;
+
+}
+
+.site-navigation {
+  background-color: #32425c;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: regular;
+  color: #ffffff;
+}
+
+.top-menu,
+.selection-list,
+.site-menu,
+.site-navigation,
+.footer-nav-list1,
+.footer-nav-list2,
+.footer-social-list,
+.breadcrubs,
+.filters-list,
+.products-list,
+.pagination-list,
+.user-navigation {
+  list-style: none;
+}
+
+.top-menu a,
+.footer-nav-list1 a,
+.footer-nav-list2 a,
+.site-navigation a {
+  color: #ffffff;
+}
+
+.top-menu a:hover,
+.top-menu a:focus {
+  background-color: #212a3a;
+}
+
+.top-menu a:active {
+  background-color: #161d29;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #ee3643;
+}
+
+.user-navigation a:active {
+  color: #cacaca;
+}
+
+.site-menu a:hover,
+.site-menu a:focus {
+  background-color: #293449;
+}
+
+.site-menu a:active {
+  background-color: #1d2739;
+}
+
+.row-telefon a,
+.row-heading {
+  color: red;
+}
+
+.beschriftung {
+  background-color: #f9f5f0;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.beschriftung-inner {
+  background-color: #f2f6f8;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #ca2c37;
+}
+
+.button:active {
+  background-color: #ba2732;
+}
+
+.selection{
+  background-color: #32425c;
+}
+
+.selection-list a {
+  color: #ffffff;
+}
+
+.appointment-item input,
+.appointment-item textarea {
+  font: inherit;
+  background-color: transparent;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.company-item {
+  border: 1px solid #e5e5e5;
+}
+
+.company-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.service {
+  background-color: #f4f8fa;
+}
+
+.main-footer {
+  color: #ffffff;
+  background-color: #32425c;
+}
+
+.part-footer {
+  background-color: #293449;
+}
+
+.description {
+  background-color: #f2f6f8;
+}
+
+.footer-nav-list2 a {
+  color: #ffd180;
+}
+
+.footer-nav-list2 a:hover,
+.footer-nav-list2 a:focus {
+  text-decoration: underline;
+}
+
+.footer-nav-list1 a:hover,
+.footer-nav-list1 a:focus {
+  text-decoration: underline;
+}
+
+
+.footer-nav-list2 a:active {
+  color: #ffd180;
+}
+
+.footer-nav-list1 a:active {
+  color: #f1f5f7;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.entwickler-contacts a {
+  color: #ffd180;
+}
+
+.entwickler-contacts a:hover,
+.entwickler-contacts a:focus {
+  text-decoration: underline;
+}
+
+.entwickler-contacts a:active {
+  color: #ee3643;
+}
+
