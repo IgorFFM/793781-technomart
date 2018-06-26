@@ -41,7 +41,12 @@ input[type="radio"].visually-hidden {
 
 .main-header-logo {
   background-color: #ee3643;  
-  width: 220px;
+  max-width: 220px;
+
+  font-family: "Cuprum", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 24px; 
+    color: #ffffff;
 
 }
 
@@ -51,8 +56,8 @@ input[type="radio"].visually-hidden {
 
 .top-menu {
   background-color: #293449;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 17px;
+  line-height: 
   font-weight: regular;
   color: #ffffff;
 }
@@ -77,15 +82,27 @@ input[type="radio"].visually-hidden {
 .items-list,
 .products-list,
 .pagination-list,
+.main-header-logo,
 .user-navigation {
   list-style: none;
 }
 
 .top-menu a,
+.main-header-logo a,
 .footer-nav-list-one a,
 .footer-nav-list-two a,
 .site-navigation a {
   color: #ffffff;
+}
+
+.main-header-logo a:hover,
+.main-header-logo a:focus {
+  background-color: #ca2c37;
+
+}
+
+.main-header-logo a:active {
+  background-color: #ba2732;
 }
 
 .top-menu a:hover,
@@ -290,25 +307,16 @@ body {
   
 }
 
-.top-menu {
-
+.main-header-logo {
   margin: 0;
   padding: 0;
 
-  min-height: 42px;
 }
 
-.top-menu {
-  display: flex;
-  flex-wrap: wrap;
-  width: 710px;
-
-}
-
-.top-menu a {
+.main-header-logo a {  
   display: block;
   
-  padding: 13px 20px;
+  padding: 10px 50px;
 
   vertical-align: middle;
 }
@@ -317,34 +325,225 @@ body {
   background-color: #63a63e;
 }
 
+.top-menu {
 
-.navigation-mitte {
-  width: 900px;
   margin: 0;
   padding: 0;
-  margin-left: 70px;
+
+  min-height: 42px;
+}
+
+
+.top-menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 760px;
+
+}
+
+
+.top-menu a {
+  display: block;
+  
+  padding: 10px 20px;
+
+  vertical-align: middle;
+}
+
+.top-menu .search-link a {
+
+  padding-left: 50px;
+  padding-right: 260px;
+
+}
+
+.bookmarks-link {
+  position: relative;
+}
+
+.bookmarks-link::before {
+  content: "";
+
+  position: absolute;
+
+  width: 15px;
+  height: 17px;
+
+  background-image: url("../img/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  background-color: #ee3643;
+}
+
+
+
+
+
+
+
+.navigation-mitte {
+  width: 940px;
+  margin: 0;
+  padding: 0;
+  
 
   min-height: 158px;
 }
 
 .row-heading {
   width: 183px;
+
+  margin:0;
+  padding:0;
+
+  font-family: "Cuprum", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 23px;
 }
 
 .telefon-adress {
   width: 270px;
 }
 
+
+.row-telefon {
+
+  width: 270px;
+  height: 45px;
+  border: solid 3px #ffffff;
+
+  font-family: "Cuprum", Arial, sans-serif;
+    font-size: 21px;
+    line-height: 21px;
+
+    margin:0;
+    padding:0;
+
+}
+
+
+
+.telefon-adress .row-telefon a{
+  display: block;
+
+
+  padding: 13px 52px 11px 74px;
+}
+
+
+
 .user-navigation {
   display: flex;
 
   margin: 0;
-  padding: 0;
+  padding: 0;  
+}
 
-  width: 285px;
+.user-navigation a {
+  display: block;
+  
 
+  vertical-align: middle;
+  background-color: #ffffff;
+}
+
+.user-navigation .login-link {
+  position: relative;
+  
+  
+}
+
+.registration-link {
+  padding: 14px 25px 11px 25px;
+
+  width: 100px;
+  height: 20px;
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.login-link {
+  padding: 14px 27px 15px 48px;
+  margin-right: 10px;
+  width: 121px;
+  width: 46px;
+  height: 16px;
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  
+}
+
+
+
+
+.login-link::before {
+  content: "";
+  
+  position: absolute;
+  top: 15px;
+  left: 15px;
+
+  width: 20px;
+  height: 17px;
+
+  background-image: url("../img/icon-login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  
+  opacity: 0.3;
 
 }
+
+.login-link:hover::before,
+.login-link:focus::before,
+.login-link:active::before {
+  opacity: 1;
+}
+
+.row-telefon a{
+  position: relative;
+}
+
+.row-telefon a::before {
+  content: "";
+
+  position: absolute;
+
+  width: 20px;
+  height: 20px;
+
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  background-color: #ee3643;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .site-navigation {
   width: 940px;
